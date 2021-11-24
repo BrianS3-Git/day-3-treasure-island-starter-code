@@ -28,10 +28,10 @@ print("Your mission is to find the treasure.")
 #Write your code below this line 👇
 cross_roads = input(
     "You\'re at a cross roads. Where do you want to go? Type \"left\" or \"right\": "
-)
+).lower()
 
 # Come to Lake
-cross_roads = cross_roads.lower()
+#cross_roads = cross_roads.lower()
 print("")
 
 if cross_roads == "left":

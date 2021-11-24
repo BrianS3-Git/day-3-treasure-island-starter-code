@@ -26,35 +26,27 @@ print("Your mission is to find the treasure.")
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #Write your code below this line 👇
-cross_roads = input(
-    "You\'re at a cross roads. Where do you want to go? Type \"left\" or \"right\": "
-).lower()
+choice1 = input("You\'re at a cross roads. Where do you want to go? Type \"left\" or \"right\": ").lower()
 
 # Come to Lake
-#cross_roads = cross_roads.lower()
+
 print("")
 
-if cross_roads == "left":
-	lake = input(
-	    "You\'ve come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across: "
-	)
+if choice1 == "left":
+  choice2 = input("You\'ve come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat.Type \"swim\" to swim across: ").lower()
+  if choice2 == "wait":
+    choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose? type red, yellow, or blue: ").lower()
+    print("")
+    if choice3 == "red":
+     print("It's a room full of fire. GAME OVER!")
+    elif choice3 == "blue":
+     print("Eaten by beasts. GAME OVER!")
+    else:
+     print("You found the treasure. YOU WIN!")
+  else:
+   print("You were eaten by a hungry giant trout. GAME OVER!")  
+
+
 else:
 	print("You fell into a hole. GAME OVER!")
 
-# Made it to Island
-lake = lake.lower()
-print("")
-if lake == "swim":
-  print("You were eaten by a hungry giant trout. GAME OVER!")
-else:
-  door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose? type red, yellow, or blue: ")
-
-  # Choose a door
-door = door.lower()
-print("")
-if door == "red":
-  print("It's a room full of fire. GAME OVER!")
-elif door == "blue":
-  print("Eaten by beasts. GAME OVER!")
-else:
-  print("You found the treasure. YOU WIN!")

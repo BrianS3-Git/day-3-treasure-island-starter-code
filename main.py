@@ -27,7 +27,7 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 cross_roads = input(
-    "You\'re at a cross roads. Where do you want to go? Type \"left\" or \"right\" "
+    "You\'re at a cross roads. Where do you want to go? Type \"left\" or \"right\": "
 )
 
 # Come to Lake
@@ -36,7 +36,7 @@ print("")
 
 if cross_roads == "left":
 	lake = input(
-	    "You\'ve come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across. "
+	    "You\'ve come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across: "
 	)
 else:
 	print("You fell into a hole. GAME OVER!")
@@ -47,7 +47,7 @@ print("")
 if lake == "swim":
   print("You were eaten by a hungry giant trout. GAME OVER!")
 else:
-  door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose? type red, yellow, or blue ")
+  door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose? type red, yellow, or blue: ")
 
   # Choose a door
 door = door.lower()
